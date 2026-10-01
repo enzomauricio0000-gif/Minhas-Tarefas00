@@ -1,16 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<!DOCTYPE html>
 <html lang="pt">
-
-
-<body>
-    <h1>Meu Painel de Tarefas</h1>
-</body>
-
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,31 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="cartao-aplicacao">
-        <header class="cabecalho-aplicacao">
-            <h1>Minhas Tarefas</h1>
-            <button class="botao-icone" id="botao-alternar-tema">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-        </header>
-        <div class="caixa-entrada">
-            <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
-            <button class="botao-principal" id="botao-adicionar">
-                <i class="fa-solid fa-plus"></i> Adicionar
-            </button>
+
+    <h1>Meu Painel de Tarefas</h1>
+
+    <div class="contentor-principal">
+        <!-- FOTO DA ESQUERDA -->
+        <img src="Ft1.jpeg" alt="Foto 1" class="foto-item">
+
+        <!-- CARTÃO NO CENTRO -->
+        <div class="cartao-aplicacao">
+            <header class="cabecalho-aplicacao">
+                <h1>Minhas Tarefas</h1>
+                <button class="botao-icone" id="botao-alternar-tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </header>
+
+            <div class="caixa-entrada">
+                <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
+                <button class="botao-principal" id="botao-adicionar">
+                    <i class="fa-solid fa-plus"></i> Adicionar
+                </button>
+            </div>
+
+            <ul class="lista-tarefas" id="lista-tarefas">
+                <!-- As tarefas entram aqui via JavaScript -->
+            </ul>
+
+            <footer class="rodape-aplicacao">
+                <span id="contador-tarefas">0 tarefas na lista</span>
+            </footer>
         </div>
-        <ul class="lista-tarefas" id="lista-tarefas">
 
-        </ul>
-        <footer class="rodape-aplicacao">
-            <span id="contador-tarefas">0 tarefas na lista</span>
-        </footer>
+        <!-- FOTO DA DIREITA -->
+        <img src="Ft2.jpeg" alt="Foto 2" class="foto-item">
     </div>
-
 
     <script src="script.js"></script>
 </body>
-
 </html>
